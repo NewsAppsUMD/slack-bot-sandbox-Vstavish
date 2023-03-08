@@ -5,6 +5,12 @@ from slack.errors import SlackApiError
 slack_token = os.environ.get('SLACK_API_TOKEN')
 
 client = WebClient(token=slack_token)
+
+# code here loads csv + finds specific call
+# location = row['location']
+# date = row['date']
+
+
 msg = "testing!"
 try:
     response = client.chat_postMessage(
